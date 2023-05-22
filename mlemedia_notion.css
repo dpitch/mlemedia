@@ -1,0 +1,250 @@
+
+
+/* ------------------------------------------------------------------------ */
+/* Vue calendrier */
+
+
+
+/* Cacher en haut à droite : Filter, sort, nouvelle page */
+/* Connecter à Notion*/
+#notion-app > div > div:nth-child(1) > div > div:nth-child(2) > div.notion-frame > div > div:nth-child(4) > div.notion-selectable.notion-collection_view_page-block > div > div:nth-child(2) {
+    display: none !important;
+}
+
+/* Version pas connectée*/
+#notion-app > div > div:nth-child(1) > div > div:nth-child(1) > div.notion-frame > div > div:nth-child(4) > div.notion-selectable.notion-collection_view_page-block > div > div:nth-child(2) {
+    display: none !important;
+}
+
+
+
+
+/* Cacher "ajouter une propriété" quand on ouvre une database item*/
+/* Page slider*/
+#notion-app > div > div:nth-child(1) > div > div.notion-peek-renderer > div > div.notion-scroller.vertical > div.whenContentEditable > div:nth-child(3) > div > div:nth-child(2) > div > div:nth-child(1) > div > div > div > div:nth-child(2) {
+    display: none !important;
+}
+/* Full page*/
+#notion-app > div > div:nth-child(1) > div > div:nth-child(2) > div.notion-frame > div > div.whenContentEditable > div:nth-child(3) > div > div:nth-child(2) > div > div:nth-child(1) > div > div > div > div:nth-child(2) {
+    display: none !important;
+}
+
+
+
+
+/* Proposition Passer sur l'app popup */
+
+
+/* rajouter une nouvelle vue */
+#notion-app > div > div:nth-child(1) > div > div:nth-child(2) > div.notion-frame > div > div:nth-child(4) > div.notion-selectable.notion-collection_view_page-block > div > div:nth-child(1) > div.notion-collection-add-view {
+    display: none !important;
+}
+
+
+
+/* Empecher le changement des database items 
+
+#notion-app > div > div:nth-child(1) > div > div.notion-peek-renderer > div > div.notion-scroller.vertical > div.whenContentEditable > div:nth-child(3) > div > div:nth-child(2) > div > div:nth-child(1) > div > div > div > div:nth-child(1) > div:nth-child(n) > div > div:nth-child(1) 
+{
+    pointer-events: none;
+
+}
+
+*/
+
+
+
+/* Bloquer les 2 derniers items (parce que ce sont des formules) */
+
+#notion-app > div > div:nth-child(1) > div > div.notion-peek-renderer > div > div.notion-scroller.vertical > div.whenContentEditable > div:nth-child(3) > div > div:nth-child(2) > div > div:nth-child(1) > div > div > div > div:nth-child(1) > div:nth-last-child(-n+4) > div{
+  
+    
+
+       background-color: #f5f5f5b3;
+}
+
+
+
+/* 
+#notion-app > div > div:nth-child(1) > div > div.notion-peek-renderer > div > div.notion-scroller.vertical > div.whenContentEditable > div:nth-child(3) > div > div:nth-child(2) > div > div:nth-child(1) > div > div > div > div:nth-child(1) > div:nth-last-child(-n+2) > div > div:nth-child(2) > div > div > div:nth-child(1){
+    pointer-events: none;
+   
+}
+
+#notion-app > div > div:nth-child(1) > div > div.notion-peek-renderer > div > div.notion-scroller.vertical > div.whenContentEditable > div:nth-child(3) > div > div:nth-child(2) > div > div:nth-child(1) > div > div > div > div:nth-child(1) > div:nth-last-child(-n+2) > div > div:nth-child(2) > div > div > div:nth-child(2){
+   
+    pointer-events: all !important;
+  
+}
+*/
+
+
+#notion-app > div > div:nth-child(1) > div > div:nth-child(2) > div.notion-frame > div > div:nth-child(6) > div > div > div > div:nth-child(3) > div > div:nth-child(n) > a > div:nth-child(1){
+    display: none !important;
+}
+
+/* pour mettre les titres en gras */
+
+#notion-app > div > div:nth-child(1) > div > div:nth-child(2) > div.notion-frame > div > div:nth-child(6) > div > div > div > div:nth-child(3) > div > div:nth-child(n) > a > div:nth-child(2) > div:nth-child(2){
+    font-weight: 600 !important;
+}
+
+
+/* pour les cantons en bas et à droite  */
+
+#notion-app > div > div:nth-child(1) > div > div:nth-child(2) > div.notion-frame > div > div:nth-child(6) > div > div > div > div:nth-child(3) > div > div:nth-child(n) > a > div:nth-child(2) > div:nth-child(5){
+    margin-top: 20px !important;
+    justify-content: flex-end;
+}
+
+
+
+
+/* Cacher OP sur toutes les pages */
+
+#notion-app > div > div:nth-child(1) > div > div.notion-peek-renderer > div > div.notion-scroller.vertical > div.whenContentEditable > div:nth-child(3) > div > div:nth-child(2) > div > div:nth-child(1) > div > div > div > div:nth-child(1) > div:nth-last-child(1){
+
+      display : none !important;
+     
+}
+
+/* Cacher Journées spéciales sur toutes les pages */
+#notion-app > div > div:nth-child(1) > div > div.notion-peek-renderer > div > div.notion-scroller.vertical > div.whenContentEditable > div:nth-child(3) > div > div:nth-child(2) > div > div:nth-child(1) > div > div > div > div:nth-child(1) > div:nth-last-child(2){
+
+      display : none !important;
+     
+}
+
+
+
+/* Montrer Journées spéciales et OP dès qu'on rajoute la class .show */
+#notion-app > div > div:nth-child(1) > div > div.notion-peek-renderer > div > div.notion-scroller.vertical > div.whenContentEditable > div:nth-child(3) > div > div:nth-child(2) > div > div:nth-child(1) > div > div > div > div:nth-child(1) > div:nth-last-child(n).show{
+
+      display : block !important;
+     
+}
+
+/* Cacher un element dès qu'on rajoute la class .hide */
+#notion-app > div > div:nth-child(1) > div > div.notion-peek-renderer > div > div.notion-scroller.vertical > div.whenContentEditable > div:nth-child(3) > div > div:nth-child(2) > div > div:nth-child(1) > div > div > div > div:nth-child(1) > div:nth-last-child(n).hide{
+
+      display : none !important;
+     
+}
+
+
+
+
+
+
+.redtest{
+    background-color: red; !important;
+}
+
+
+
+
+
+
+
+/* texte dans les blocs tout en bas des pages  */
+.notion-selectable{
+  
+}
+
+
+/* Texte sur le calendrier et dans les gros titres de page (Name)  */
+.notion-page-block{
+   
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------ */
+/* Vue kanban aujourd'hui */
+
+
+
+#notion-app > div > div:nth-child(1) > div > div:nth-child(2) > div.notion-frame > div > div:nth-child(6) > div > div > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(n) > div:nth-child(3){
+    display: none !important;
+}
+
+#notion-app > div > div:nth-child(1) > div > div:nth-child(2) > div.notion-frame > div > div:nth-child(6) > div > div > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(n) > div.notion-selectable.notion-page-block.notion-collection-item > a > div:nth-child(3) > div:nth-child(5){
+    color: red !important;
+}
+
+
+
+/* Le mois en grand sur le calendrier */
+#notion-app > div > div:nth-child(1) > div > div:nth-child(2) > div.notion-frame > div > div:nth-child(6) > div > div > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(1){
+    font-size: 24px !important;
+}
+
+/* Mettre le fond ou il y a le mois non-transparent */
+#notion-app > div > div:nth-child(1) > div > div:nth-child(2) > div.notion-frame > div > div:nth-child(6) > div > div > div > div:nth-child(1){
+    background-color: white !important;
+}
+
+
+/* enlever le plus pour rajouter des items dans le calendrier */
+#notion-app > div > div:nth-child(1) > div > div:nth-child(2) > div.notion-frame > div > div:nth-child(6) > div > div > div > div:nth-child(3) > div:nth-child(n) > div:nth-child(n) > div:nth-child(1){
+    display: none !important;
+}
+
+
+ #notion-app > div > div:nth-child(1) > div > div:nth-child(2) > div.notion-frame > div > div:nth-child(6) > div > div > div > div:nth-child(3) > div:nth-child(n) > div:nth-child(n) > div:nth-child(1).notion-calendar-view-day{
+    display: block !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------ */
+/* Vue Gallerie aujourd'hui */
+
+
+#notion-app > div > div:nth-child(1) > div > div:nth-child(2) > div.notion-frame > div > div:nth-child(6) > div > div > div > div > div:nth-child(n) > div:nth-child(2) > div > div:nth-child(3){
+    display: none !important;
+}
+
+#notion-app > div > div:nth-child(1) > div > div:nth-child(2) > div.notion-frame > div > div:nth-child(6) > div > div > div > div > div:nth-child(6){
+    display: none !important;
+}
+
+#notion-app > div > div:nth-child(1) > div > div:nth-child(2) > div.notion-frame > div > div:nth-child(n) > div > div > div > div > div:nth-child(1) > div > div > div.notion-selectable.notion-collection_view_page-block > div:nth-child(2){
+    display: none !important;
+}
+#notion-app > div > div:nth-child(1) > div > div:nth-child(2) > div.notion-frame > div > div:nth-child(n) > div > div > div > div > div:nth-child(1) > div > div > div.notion-selectable.notion-collection_view_page-block > div:nth-child(3){
+    display: none !important;
+}
+
+#notion-app > div > div:nth-child(1) > div > div:nth-child(2) > div.notion-frame > div > div:nth-child(6) > div > div > div > div > div:nth-child(n) > div:nth-child(1) > div > div:nth-child(3){
+    display: none !important;
+}
+#notion-app > div > div:nth-child(1) > div > div:nth-child(2) > div.notion-frame > div > div:nth-child(6) > div > div > div > div > div:nth-child(n) > div:nth-child(1) > div > div:nth-child(4){
+    display: none !important;
+}
+
+	/* mettre les colonnes plus large */
+
+#notion-app > div > div:nth-child(1) > div > div:nth-child(2) > div.notion-frame > div > div:nth-child(6) > div > div > div > div > div:nth-child(n) > div:nth-child(2) > div{
+	
+	grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+
+}
+
+	/* le truc pour cacher chaque colone */
+
+#notion-app > div > div:nth-child(1) > div > div:nth-child(2) > div.notion-frame > div > div:nth-child(6) > div > div > div > div > div:nth-child(n) > div:nth-child(1) > div > div:nth-child(1) > div{
+    display: none !important;
+}
