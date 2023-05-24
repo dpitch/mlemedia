@@ -16,7 +16,10 @@
     display: none !important;
 }
 
-
+/* Proposition Passer sur l'app popup */
+#notion-app > div > div.notion-overlay-container.notion-default-overlay-container > div:nth-child(2) > div > div > div:nth-child(2) > div > div{
+    display: none !important;
+}
 
 
 /* Cacher "ajouter une propriété" quand on ouvre une database item*/
