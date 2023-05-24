@@ -82,7 +82,8 @@
 */
 
 
-#notion-app > div > div:nth-child(1) > div > div:nth-child(2) > div.notion-frame > div > div:nth-child(6) > div > div > div > div:nth-child(3) > div > div:nth-child(n) > a > div:nth-child(1){
+
+#notion-app > div > div:nth-child(1) > div > div:nth-child(n) > div.notion-frame > div > div:nth-child(6) > div > div > div > div:nth-child(3) > div > div:nth-child(n) > a > div:nth-child(1){
     display: none !important;
 }
 
