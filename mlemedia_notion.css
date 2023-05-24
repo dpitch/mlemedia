@@ -82,6 +82,7 @@
 */
 
 
+/* cacher le titre principal sur les petites cases du calendrier */
 
 #notion-app > div > div:nth-child(1) > div > div:nth-child(n) > div.notion-frame > div > div:nth-child(6) > div > div > div > div:nth-child(3) > div > div:nth-child(n) > a > div:nth-child(1){
     display: none !important;
@@ -89,14 +90,14 @@
 
 /* pour mettre les titres en gras */
 
-#notion-app > div > div:nth-child(1) > div > div:nth-child(2) > div.notion-frame > div > div:nth-child(6) > div > div > div > div:nth-child(3) > div > div:nth-child(n) > a > div:nth-child(2) > div:nth-child(2){
+#notion-app > div > div:nth-child(1) > div > div:nth-child(n) > div.notion-frame > div > div:nth-child(6) > div > div > div > div:nth-child(3) > div > div:nth-child(n) > a > div:nth-child(2) > div:nth-child(2){
     font-weight: 600 !important;
 }
 
 
 /* pour les cantons en bas et à droite  */
 
-#notion-app > div > div:nth-child(1) > div > div:nth-child(2) > div.notion-frame > div > div:nth-child(6) > div > div > div > div:nth-child(3) > div > div:nth-child(n) > a > div:nth-child(2) > div:nth-child(5){
+#notion-app > div > div:nth-child(1) > div > div:nth-child(n) > div.notion-frame > div > div:nth-child(6) > div > div > div > div:nth-child(3) > div > div:nth-child(n) > a > div:nth-child(2) > div:nth-child(5){
     margin-top: 20px !important;
     justify-content: flex-end;
 }
